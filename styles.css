@@ -38,19 +38,20 @@ form{
 }
 
 input {
-    border: 2px solid #000;
+    border: 2px solid #576BA8;
     margin-bottom: 15px;
     padding: 5px;
     width: 20rem;
     border-radius: 5px;
   }
 
+input:focus{
+    border-color: blue;
+    box-shadow: 5px 5px #BEC0CD;
+}
+
 input:invalid {
     border-color: red;
-  }
-  
-  input:valid {
-    border-color: green;
   }
 
   .last-sec{
