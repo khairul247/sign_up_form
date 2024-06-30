@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/my-handling-form-page" method="post">
+        <section class="first-sec">
+            <h2>This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+            </h2>
+            <h2>You know you want to!</h2>
+        </section>
+        <section class="second-sec">
+            <div id="first-row">
+                <div>
+                    <label for="firstname"> FIRST NAME</label>
+                    <div>
+                        <input type="text" name="firstname" id="user_firstname" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="lastname">LAST NAME</label>
+                    <div>
+                        <input type="text" name="lastname" id="user_lastname" required>
+                    </div>
+                </div>
+            </div>   
+            <div id="second-row"> 
+                <div>
+                    <label for="mail">EMAIL </label>
+                    <div>
+                        <input type="email" name="mail" id="user_mail" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <div>
+                        <input type="tel" name="phone" id="user_phone" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required>
+                    </div>
+                </div>
+            </div>
+            <div id="last-row">
+                <div>
+                    <label for="pwd">PASSWORD </label>
+                    <div>
+                        <input type="password" name="password" id="user_pwd" required>
+                    </div>
+                </div>
+                <div>            
+                    <label for="confirm_pwd">CONFIRM PASSWORD </label>
+                    <div>
+                        <input type="password" name="confirmpassword" id="user_confirmpwd" required>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-sec">
+            <div class="button">
+                <button type="submit">Create Account</button>
+            </div>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </section>
+    </form>
+</body>
+</html>
